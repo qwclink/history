@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  font-family: "Montserrat", serif;
+}
+body {
+  background: #494949;
+}
+.red {
+  color: #a70a0a;
+}
+.logo {
+  height: 100px;
+}
+.banner {
+  background: url('../img/banner-bg.png') 0 -200px no-repeat fixed;
+  height: 800px;
+
+}
+.banner__text {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 150px;
+}
+.banner__date {
+  font-weight: 400;
+  font-size: 64px;
+  color: #fff;
+}
+.banner__congratulation {
+  font-weight: 700;
+  font-size: 64px;
+  color: #fff;
+}
+.banner__slogan {
+  font-weight: 400;
+  font-size: 36px;
+  color: #fff;
+}
+.history {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 20px 0 20px 0;
+}
+.history__right img {
+  max-width: 450px;
+}
+.history__header {
+  font-weight: 500;
+  font-size: 32px;
+  color: #fff;
+  margin: 0 0 10px;
+}
+.history__text {
+  color: #cccccc;
+}
+.cards__header {
+  font-weight: 500;
+  font-size: 32px;
+  color: #fff;
+  margin: 0 0 20px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.mycard {
+  width: 300px;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  border: 1px solid #1c1c1c;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #252525;
+  transition-duration: 1s;
+}
+.mycard:hover {
+  scale: 1.05;
+  background: #5a5a5a;
+}
+.card__header {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0 5px 5px;
+  color: #fff;
+}
+.card__date {
+  font-weight: 500;
+  font-size: 14px;
+  color: #cccccc;
+  margin: 0 5px 15px;
+}
+.card__description {
+  font-weight: 500;
+  font-size: 12px;
+  color: #cccccc;
+  margin: 0 5px 15px;
+}
+.mycard img {
+  height: 200px;
+  margin: 0 0 15px;
+}
+#cards {
+  background: #383838;
+  padding: 10px;
+}
+.map {
+  padding: 10px;
+}
+.footer {
+  padding: 30px 100px 0 10px;
+  font-size: 10px;
+  color:#cccccc;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.footer ul{
+  margin: 0;
+  padding: 0;
+}
+.footer li{
+  font-size: 12px;
+  list-style: none;
+  margin: 0 0 5px 0;
+}
+
+
+
+@media (max-width: 767px) {
+  .logo {
+    height: 80px;
+  }
+  .banner {
+    height: 500px;
+  }
+  .banner__text {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 80px;
+  }
+  .banner__date {
+    font-weight: 400;
+    font-size: 34px;
+    color: #fff;
+  }
+  .banner__congratulation {
+    font-weight: 700;
+    font-size: 34px;
+    color: #fff;
+  }
+  .banner__slogan {
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+  }
+  .history {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10px 10px 10px;
+  }
+  .history__right img {
+    max-width: 45px;
+  }
+  .history__header {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0 0 10px;
+    display: flex;
+    align-items: center;
+  }
+  .history__header::after {
+    content: url(/assets/img/history_mobile.png);
+    width: 30px;
+    height: 30px;
+    margin: 0 20px 0 0;
+  }
+  .history__text {
+    font-size: 14px;
+  }
+  .history__right {
+    display: none;
+  }
+  .cards__header {
+    font-size: 18px;
+  }
+  .footer {
+    padding: 20px 10px;
+  }
+}
